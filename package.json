@@ -1,0 +1,28 @@
+{
+  "name": "codefuel",
+  "version": "1.0.0",
+  "description": "Search",
+  "main": "index.js",
+  "author": "Umid Ghimire",
+  "license": "MIT",
+  "scripts": {
+    "server": "nodemon index.js",
+    "dev": "concurrently \"yarn server\" \"cd client && yarn run start\"",
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "lint": "eslint . --ext .ts"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier-format && npm run lint"
+    }
+  },
+  "dependencies": {
+    "concurrently": "^7.0.0",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "lodash": "^4.17.21",
+    "nodemon": "^2.0.15"
+  }
+}

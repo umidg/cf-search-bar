@@ -1,0 +1,29 @@
+.container {
+  margin: 25% auto;
+  width: 50%;
+}
+
+.container > * {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  line-height: 30px;
+  font-size: 24px;
+}
+
+ul {
+  padding: 10px;
+}
+
+ol {
+  padding: 5px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+ol:hover {
+  background-color: #cccccc;
+  font-size: 25px;
+}
